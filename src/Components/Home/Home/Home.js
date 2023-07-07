@@ -5,6 +5,7 @@ import HomeHotDeals from '../HomeHotDeals/HomeHotDeals';
 import SearchItems from '../SearchItem/SearchItems';
 import HomeSlider2 from '../HomeSlider2/HomeSlider2';
 import DealsOnFurniture from '../DealsOnFurniture/DealsOnFurniture';
+import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <SearchItems></SearchItems>
             <HomeSlider2></HomeSlider2>
             <DealsOnFurniture></DealsOnFurniture>
+           
         </div>
     );
 };

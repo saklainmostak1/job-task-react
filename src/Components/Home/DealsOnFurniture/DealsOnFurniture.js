@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const DealsOnFurniture = () => {
 
-    const [dealsOnFurniture, setDealsOnFurniture] = useState([])
+    const [dealsOnFurniture, setDealsOnFurniture] = useState()
 
     useEffect(() => {
         fetch('https://api.hiring.masterkey.tech/api/v1/products')
@@ -16,7 +16,7 @@ const DealsOnFurniture = () => {
 
                 {
                     dealsOnFurniture?.products[0]?.productData?.slice(17, 22).map(product =>
-                        <div className="mt-5  bg-white mb-5">
+                        <div className="mt-5 card  bg-white mb-5">
                             <figure><img src={product.product_img
                             } alt="Shoes" /></figure>
                             <div className=' text-black mt-5'>

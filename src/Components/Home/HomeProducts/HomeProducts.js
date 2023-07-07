@@ -3,8 +3,7 @@ import './style.css'
 
 const HomeProducts = () => {
 
-
-    const [products, setProducts] = useState([])
+    const [product, setProducts] = useState()
 
     useEffect(() => {
         fetch('https://api.hiring.masterkey.tech/api/v1/products')
@@ -12,6 +11,7 @@ const HomeProducts = () => {
             .then(data => setProducts(data))
     }, [])
 
+    // console.log(Object.entries(product));
 
 
 
@@ -25,7 +25,7 @@ const HomeProducts = () => {
                 <div className='grid  lg:grid-cols-3 md:grid-cols-2 mt-10  bg-white '>
 
                 {
-                     products?.products[0]?.productData?.slice(6,12).map(product =>
+                     product?.products[0]?.productData.slice(6,12).map(product =>
                         <div className="mt-5 card  bg-white mb-5">
                             <figure><img src={product.product_img
                             } alt="Shoes" className='flex justify-center'/></figure>
@@ -44,6 +44,7 @@ const HomeProducts = () => {
                
 
                 </div>
+               
             </div>
         </div>
     );

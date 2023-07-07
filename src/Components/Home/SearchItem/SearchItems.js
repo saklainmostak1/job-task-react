@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 const SearchItems = () => {
-    const [searchProducts, setSearchProducts] = useState([])
+    const [searchProducts, setSearchProducts] = useState()
 
     useEffect(() => {
         fetch('https://api.hiring.masterkey.tech/api/v1/products')
@@ -15,7 +15,7 @@ const SearchItems = () => {
 
             {
                 searchProducts?.products[0]?.productData?.slice(12,17).map(product =>
-                    <div className="mt-5  bg-white">
+                    <div className="mt-5 card  bg-white">
                         <figure><img src={product.product_img
                         } alt="Shoes" /></figure>
                         
