@@ -1,0 +1,29 @@
+.product-name{
+    color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+width: 236px;
+}
+.hot-deals{
+    color:white;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-bottom:1px dotted #FFAE5D;
+}
+.products-text{
+    display: flex;
+flex-direction: column;
+flex-shrink: 0;
+color: #000;
+font-family: Poppins;
+font-size: 96px;
+font-style: normal;
+font-weight: 300;
+line-height: 100px;
+}
